@@ -2,7 +2,7 @@ import React, { Dispatch, useEffect, useState } from 'react'
 import { fetchGif } from './getRandomGif'
 
 const getGif = async (setRandomGif: Dispatch<any>) => {
-  const gif = await fetchGif('duck')
+  const gif = await fetchGif('pikachu')
   setRandomGif(gif)
 }
 
