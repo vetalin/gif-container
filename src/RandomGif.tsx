@@ -1,18 +1,19 @@
-import React, { useEffect, useState } from 'react'
-import { fetchGif, getRandomWord } from './getRandomGif'
+import React, { Dispatch, useEffect, useState } from 'react'
+import { fetchGif } from './getRandomGif'
+
+const getGif = async (setRandomGif: Dispatch<any>) => {
+  const gif = await fetchGif('duck')
+  setRandomGif(gif)
+}
 
 export const RandomGif: React.FC = () => {
   const [randomGif, setRandomGif] = useState()
   useEffect(() => {
-    (async () => {
-      const randomWord = await getRandomWord()
-      const gif = await fetchGif(randomWord)
-      setRandomGif(gif)
-    })()
+    getGif(setRandomGif)
   }, [])
   return (
-    <div className="RandomGif">
-      <img src={randomGif} alt=""/>
+    <div className="RandomGif" onClick={() => getGif(setRandomGif)}>
+      <img src={randomGif} alt="" style={{width: '100vw', height: '100vh'}}/>
     </div>
   )
 }
