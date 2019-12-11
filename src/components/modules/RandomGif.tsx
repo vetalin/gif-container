@@ -14,7 +14,7 @@ export const RandomGif: React.FC = () => {
   }, [])
   return (
     <div className="RandomGif" onClick={() => getGif(setRandomGif)}>
-      <img src={randomGif} alt="" style={{width: '100vw', height: '100vh'}}/>
+      <img src={randomGif} alt="" style={{width: '50vw', height: '50vh'}}/>
     </div>
   )
 }
