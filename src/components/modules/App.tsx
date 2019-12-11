@@ -1,6 +1,5 @@
-import React from 'react';
-import './App.css';
-import { RandomGif } from './RandomGif'
+import React from 'react'
+import { RandomGif } from 'components/modules/RandomGif'
 
 const App: React.FC = () => {
   return (
@@ -12,4 +11,4 @@ const App: React.FC = () => {
   );
 }
 
-export default App;
+export default App
