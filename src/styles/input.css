@@ -1,0 +1,10 @@
+.ui-input {
+  padding: 20px;
+  border: 4px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.ui-input_shadow {
+  background: #c5c5c5;
+}

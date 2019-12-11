@@ -1,0 +1,11 @@
+.gif-search {
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+}
+
+.gif-search__input {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}

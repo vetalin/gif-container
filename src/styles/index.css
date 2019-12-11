@@ -1,0 +1,16 @@
+@import 'input.css';
+@import 'gifSearch.css';
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #3c3c3c;
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
