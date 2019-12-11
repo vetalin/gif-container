@@ -23,8 +23,8 @@ export const UiInput: React.FC<IUiInputProps> = (props) => {
   return (
     <input
       type={props.type || 'text'}
-      onInput={ onInput }
-      value={props.value} {...props}
+      onChange={ onInput }
+      value={props.value}
       className={className}
     />
   )

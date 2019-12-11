@@ -1,5 +1,5 @@
 import React, { Dispatch, useEffect, useState } from 'react'
-import { fetchGif } from 'getRandomGif'
+import { fetchGif } from 'requests/getRandomGif'
 
 const getGif = async (setRandomGif: Dispatch<any>) => {
   setRandomGif('')
