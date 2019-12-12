@@ -5,3 +5,7 @@ export const getGifsFromRemoveResults = (results: any[]) => {
     return gif?.url
   })
 }
+
+export const copyGifToClipboard = (gifUrl: string) => {
+  navigator.clipboard.writeText(gifUrl)
+}
