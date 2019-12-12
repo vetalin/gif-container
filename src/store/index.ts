@@ -1,7 +1,5 @@
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk'
 import { reducer } from 'store/reducers'
-import { registerSubscribes } from 'store/subscribes'
 
-export const store = createStore(reducer)
-
-registerSubscribes()
+export const store = createStore(reducer, applyMiddleware(thunk))
