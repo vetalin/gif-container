@@ -1,7 +1,7 @@
 import { Reducer } from 'redux'
 import { defaultState } from 'store/state'
 
-export const reducer: Reducer = async (state = defaultState, action) => {
+export const reducer: Reducer = (state = defaultState, action) => {
   switch (action.type) {
     case 'changeSearchQuery':
       return {

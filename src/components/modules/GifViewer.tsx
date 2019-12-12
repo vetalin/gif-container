@@ -4,17 +4,12 @@ import { useSelector } from 'react-redux'
 import { registerSubscribes } from 'store/subscribes'
 
 export const GifViewer: React.FC = () => {
-  const foundGifs = useSelector((state: IRootState) => {
-    return (async () => {
-      const {foundGifs} = await state
-      return foundGifs
-    })()
-  })
+  const foundGifs = useSelector((state: IRootState) => state.foundGifs)
   useEffect(registerSubscribes, [])
   return (
     <div className="gif-viewer">
       {foundGifs.map((gif: string) => (
-        <img src={gif} alt="gif" className="gif-viewer__item" />
+        <img src={gif} alt="gif" key={gif} className="gif-viewer__item" />
       ))}
     </div>
   )

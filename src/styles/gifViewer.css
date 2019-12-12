@@ -1,0 +1,12 @@
+.gif-viewer {
+    width: 80vw;
+    max-height: 70vh;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(8, calc(10vw - 11px));
+    grid-gap: 10px;
+}
+
+.gif-viewer__item {
+    width: 100%;
+}

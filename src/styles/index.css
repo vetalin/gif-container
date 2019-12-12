@@ -1,10 +1,12 @@
 @import 'input.css';
 @import 'gifSearch.css';
+@import 'gifViewer.css';
 
 body {
     margin: 0;
     padding: 0;
     background: #3c3c3c;
+    overflow: hidden;
 }
 
 .App {
